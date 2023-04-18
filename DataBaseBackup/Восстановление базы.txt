@@ -1,0 +1,1 @@
+RESTORE DATABASE HotelReserver FROM DISK = 'C:\backup\HotelReserver.bak';
