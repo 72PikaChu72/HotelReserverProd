@@ -1,0 +1,34 @@
+﻿<Page x:Class="HotelReserver.Pages.BookAsGuest"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HotelReserver.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BookAsGuest">
+
+    <Grid Background="White">
+        <Button Content="←" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="40" Height="40" FontSize="30" Background="#FF007ACC" Foreground="White" BorderThickness="0" Click="GoBackBtn" IsTabStop="False"/>
+        <Label Content="Серия паспорта" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,68,0,0" FontSize="16" FontFamily="Bahnschrift SemiBold" Height="28" Width="130"/>
+        <TextBox x:Name="PassportSeriesBox" Margin="207,62,481,0" Text="" HorizontalContentAlignment="Center" FontFamily="Bahnschrift SemiBold" VerticalContentAlignment="Center" TabIndex="1" Height="40" VerticalAlignment="Top"/>
+        <Label Content="Номер паспорта" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="324,68,0,0" FontSize="16" FontFamily="Bahnschrift SemiBold" Height="28" Width="130"/>
+        <TextBox x:Name="PassportNumberBox" Margin="459,62,117,0" Text="" HorizontalContentAlignment="Center" FontFamily="Bahnschrift SemiBold" VerticalContentAlignment="Center" TabIndex="2" Height="40" VerticalAlignment="Top"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="157,28,0,0" FontSize="16" FontFamily="Bahnschrift SemiBold" Height="28" Width="45"/>
+        <TextBox x:Name="FIOBox" Margin="207,16,117,0" Text="" HorizontalContentAlignment="Center" FontFamily="Bahnschrift SemiBold" VerticalContentAlignment="Center" TabIndex="0" Height="40" VerticalAlignment="Top"/>
+        <Label Content="Номер телефона" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,112,0,0" FontSize="16" FontFamily="Bahnschrift SemiBold" Height="28" Width="135"/>
+        <TextBox x:Name="PhoneNumberBox" Margin="207,106,428,0" Text="" HorizontalContentAlignment="Center" FontFamily="Bahnschrift SemiBold" VerticalContentAlignment="Center" TabIndex="3" Height="40" VerticalAlignment="Top"/>
+        <DatePicker x:Name="DateBox" HorizontalAlignment="Left" Margin="207,151,0,0" VerticalAlignment="Top" Width="476" Height="34" FontSize="18" FontFamily="Bahnschrift SemiBold" TabIndex="5" IsTabStop="True"/>
+        <Label Content="Дата рождения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,154,0,0" FontSize="16" FontFamily="Bahnschrift SemiBold" Height="28" Width="135"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,112,0,0" FontSize="16" FontFamily="Bahnschrift SemiBold" Height="28" Width="67"/>
+        <TextBox x:Name="PasswordBox" Margin="459,106,117,0" Text="" HorizontalContentAlignment="Center" FontFamily="Bahnschrift SemiBold" VerticalContentAlignment="Center" TabIndex="4" Height="40" VerticalAlignment="Top"/>
+        <ComboBox x:Name="RoomTypeCombo" HorizontalAlignment="Left" Margin="207,190,0,0" VerticalAlignment="Top" Width="476" Height="35" TabIndex="6"/>
+        <Label Content="Тип номера" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,194,0,0" FontSize="16" FontFamily="Bahnschrift SemiBold" Height="28" Width="96"/>
+        <Label Content="Дата заселения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,233,0,0" FontSize="16" FontFamily="Bahnschrift SemiBold" Height="28" Width="135"/>
+        <DatePicker x:Name="DateOfStartBox" HorizontalAlignment="Left" Margin="207,230,0,0" VerticalAlignment="Top" Width="476" Height="34" FontSize="18" FontFamily="Bahnschrift SemiBold" TabIndex="7" IsTabStop="True"/>
+        <Label Content="Дата выселения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,272,0,0" FontSize="16" FontFamily="Bahnschrift SemiBold" Height="28" Width="135"/>
+        <DatePicker x:Name="DateOfEndBox" HorizontalAlignment="Left" Margin="207,269,0,0" VerticalAlignment="Top" Width="476" Height="34" FontSize="18" FontFamily="Bahnschrift SemiBold" TabIndex="8" IsTabStop="True"/>
+        <Button Content="Забронировать" HorizontalAlignment="Center" Margin="0,325,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="732" Height="40" FontSize="30" Background="#FF007ACC" Foreground="White" BorderThickness="0" Click="BookBtn" IsTabStop="False"/>
+    </Grid>
+
+</Page>

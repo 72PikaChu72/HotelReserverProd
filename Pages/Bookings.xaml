@@ -1,0 +1,30 @@
+﻿<Page x:Class="HotelReserver.Pages.Bookings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HotelReserver.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Bookings">
+
+    <Grid Background="White">
+        <Button Content="←" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="40" Height="40" FontSize="30" Background="#FF007ACC" Foreground="White" BorderThickness="0" Click="GoBackBtn"/>
+        <ListBox Name ="BookingsList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,55,561,26" SelectionChanged="RoomsList_SelectionChanged"/>
+        <Button Name="TimeSelection" Content="Все" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="86" Height="40" FontSize="16" Background="#FF007ACC" Foreground="White" BorderThickness="0" Click="TimeSelectionBtn"/>
+        <Button Name="DoneBtn" Content="Применить" Margin="264,363,0,0" FontFamily="Bahnschrift SemiBold" FontSize="16" Background="#FF007ACC" Foreground="White" BorderThickness="0" Click="DoneBtnClick" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="184" Visibility="Hidden"/>
+        <Label Name="GuestFIOLbl" Visibility="Hidden" Content="Фио Гостя:" HorizontalAlignment="Left" FontFamily="Bahnschrift SemiBold" FontSize="16" Margin="278,21,0,0" VerticalAlignment="Top" Width="474"/>
+        <Button x:Name="StatusSelection" Content="Все" HorizontalAlignment="Left" Margin="146,10,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="93" Height="40" FontSize="16" Background="#FF007ACC" Foreground="White" BorderThickness="0" Click="StatusSelectionBtn"/>
+        <Label x:Name="BookStatusLbl" Visibility="Hidden" Content="Статус брони:" HorizontalAlignment="Left" FontFamily="Bahnschrift SemiBold" FontSize="16" Margin="278,181,0,0" VerticalAlignment="Top" Width="474"/>
+        <Label x:Name="RoomTypeLbl" Visibility="Hidden" Content="Тип номера:" HorizontalAlignment="Left" FontFamily="Bahnschrift SemiBold" FontSize="16" Margin="278,89,0,0" VerticalAlignment="Top" Width="474"/>
+        <Label x:Name="DateOfStartLbl" Visibility="Hidden" Content="Дата заселения:" HorizontalAlignment="Left" FontFamily="Bahnschrift SemiBold" FontSize="16" Margin="278,123,0,0" VerticalAlignment="Top" Width="474"/>
+        <Label x:Name="DateOfEndLbl" Visibility="Hidden" Content="Дата выселения:" HorizontalAlignment="Left" FontFamily="Bahnschrift SemiBold" FontSize="16" Margin="278,152,0,0" VerticalAlignment="Top" Width="474"/>
+        <Button x:Name="WelcomeGuestBtn" Content="Заселить Гостя" Margin="453,363,0,0" FontFamily="Bahnschrift SemiBold" FontSize="16" Background="#FF007ACC" Foreground="White" BorderThickness="0" Click="WelcomeBtnClick" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="184" Visibility="Hidden"/>
+        <Label x:Name="NoteLbl" Visibility="Hidden" Content="Комментарий:" HorizontalAlignment="Left" FontFamily="Bahnschrift SemiBold" FontSize="16" Margin="278,210,0,0" VerticalAlignment="Top" Width="474"/>
+        <ComboBox Name="StatusCombo" FontFamily="Bahnschrift SemiBold" HorizontalAlignment="Left" Margin="400,186,0,0" VerticalAlignment="Top" Width="120" Height="19" Visibility="Hidden"/>
+        <TextBox x:Name="NoteBox" Margin="400,211,0,0" TextWrapping="Wrap" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Text=""  FontFamily="Bahnschrift SemiBold" TabIndex="0" Height="28" VerticalAlignment="Top" HorizontalAlignment="Left" Width="343" Visibility="Hidden"/>
+        <Label x:Name="RoomNumber" Visibility="Hidden" Content="Заселить в номер:" HorizontalAlignment="Left" FontFamily="Bahnschrift SemiBold" FontSize="16" Margin="278,245,0,0" VerticalAlignment="Top" Width="474"/>
+        <ComboBox x:Name="RoomCombo" FontFamily="Bahnschrift SemiBold" HorizontalAlignment="Left" Margin="425,250,0,0" VerticalAlignment="Top" Width="120" Height="19" Visibility="Hidden"/>
+        <Label x:Name="GuestNumber" Visibility="Hidden" Content="Номер телефона:" HorizontalAlignment="Left" FontFamily="Bahnschrift SemiBold" FontSize="16" Margin="278,279,0,0" VerticalAlignment="Top" Width="474"/>
+         </Grid>
+</Page>

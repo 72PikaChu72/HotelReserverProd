@@ -1,0 +1,19 @@
+﻿<Page x:Class="HotelReserver.Pages.GuestPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HotelReserver.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="GuestPage">
+
+    <Grid Background="White">
+        <Button Content="Посмотреть статус брони" HorizontalAlignment="Center" Margin="0,164,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="548" Height="40" FontSize="16" Background="#FF007ACC" Foreground="White" BorderThickness="0" Click="CheckBookClick"/>
+        <Button Content="Забронировать номер" HorizontalAlignment="Center" Margin="0,105,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="548" Height="40" FontSize="16" Background="#FF007ACC" Foreground="White" BorderThickness="0" Click="BookClick"/>
+        <Button Content="Назад на страницу входа" HorizontalAlignment="Center" Margin="0,282,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="548" Height="40" FontSize="16" Background="#FF007ACC" Foreground="White" BorderThickness="0" Click="GoBackBtn"/>
+        <Button x:Name="LoginBtn" Content="Регистрация/Вход" HorizontalAlignment="Center" Margin="0,223,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="548" Height="40" FontSize="16" Background="#FF007ACC" Foreground="White" BorderThickness="0" Click="LoginClick"/>
+        <Label Name="FIOLabel" Content="Добро пожаловать," HorizontalAlignment="Center" Margin="0,37,0,0" HorizontalContentAlignment="Center" FontFamily="Bahnschrift SemiBold" FontSize="22" VerticalAlignment="Top" Width="690"/>
+    </Grid>
+</Page>
+
